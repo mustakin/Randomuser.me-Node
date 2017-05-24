@@ -119,7 +119,7 @@ Generator.prototype.generate = function(cb) {
       postcode: range(10000, 99999)
     });
 
-    this.include('email', name[0] + '.' + name[1].replace(/ /g, '') + '@example.com');
+    this.include('email', name[0] + '.' + name[1].replace(/ /g, '') + '@gmail.com');
 
     let salt = random(2, 8);
     let password = this.password === undefined ? randomItem(datasets[version].common.passwords) : this.genPassword();
